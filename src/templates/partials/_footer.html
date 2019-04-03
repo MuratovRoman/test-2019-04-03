@@ -1,0 +1,38 @@
+<footer class="footer">
+    <div class="footer__inner inner">
+        <div class="footer__content">
+            <div class="footer__logo">Our logo</div>
+            <div class="footer__partners partners">
+                {% for item in [
+                        'a',
+                        'netent',
+                        'amatic',
+                        'isoftbet',
+                        'quickspin',
+                        'aristokrat',
+                        'gaminat',
+                        'green_tube',
+                        'igt',
+                        'wazdan',
+                        'microgaming',
+                        'simple_games',
+                        'visa',
+                        'maestro',
+                        'master_card',
+                        'webmoney',
+                        'yandex_money',
+                        'q'
+                    ] %}
+                    <div class="partners__item">
+                        <img src="./img/{{ item }}.png" alt="{{ item }}">
+                    </div>
+                {% endfor %}
+                <div class="partners__age-limit">
+                    <img src="./img/age.png" alt="age limit">
+                </div>
+
+            </div>
+            <div class="footer__logo lg-hide">Our logo</div>
+        </div>
+    </div>
+</footer>

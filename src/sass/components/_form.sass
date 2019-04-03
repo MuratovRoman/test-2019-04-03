@@ -1,0 +1,160 @@
+.form
+    height: 100%
+    display: flex
+    flex-direction: column
+    &__top
+        flex: 1 0 auto
+    &__bottom
+        flex: 0 0 auto
+        padding: 20px 40px 0
+        +xs
+            padding: 35px 0 0
+    &-control
+        position: relative
+        &:not(:first-child)
+            margin-top: 20px
+    &-input
+        width: 100%
+        height: 70px
+        padding: 23px 14px
+        outline: none
+        font-family: $circe
+        font-size: 25px
+        font-weight: 300
+        color: $black
+        border: 3px solid transparent
+        border-radius: 3px
+        // line-height: 1
+        background-color: $white
+        transition: border-color .3s
+        +placeholder
+            font-family: $circe
+            font-size: 25px
+            font-weight: 300
+            color: $black
+            +r(1600)
+                font-size: 20px
+            +xs
+                font-size: 18px
+        +r(1600)
+            height: 50px
+            font-size: 20px
+        +xs
+            height: 40px
+            font-size: 18px
+            padding: 0 7px
+        .not-valid &
+            border-color: #db0100
+        .valid &
+            border-color: #68b645
+    &__submit
+        margin-top: 23px
+        display: flex
+        justify-content: center
+    &__btn
+        width: 335px
+        height: 100px
+        font-family: $acrom
+        font-weight: 800
+        background-image: url('../img/btn-bg.png')
+        background-color: transparent
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
+        border-radius: 50px
+        color: $white
+        font-size: 32px
+        box-shadow: 0 0 9px 1px rgba($black, .7)
+        +r(1600)
+            width: 250px
+            height: 60px
+            font-size: 28px
+        span
+            position: relative
+            z-index: 10
+            text-transform: uppercase
+            text-shadow: 0 0 6px rgba($black, .3)
+
+.checkbox
+    cursor: pointer
+    display: block
+    input
+        display: none
+        &:checked ~ .checkbox__text
+            &:before
+                box-shadow: inset 0 0 0 3px #68b645
+            &:after
+                opacity: 1
+    &__text
+        position: relative
+        display: inline-block
+        padding-left: 80px
+        font-size: 24px
+        color: $white
+        text-align: center
+        line-height: 1
+        +md
+            font-size: 18px
+            padding-left: 50px
+        +xs
+            font-size: 14px
+            padding-left: 40px
+        &:before
+            content: ''
+            position: absolute
+            left: 0
+            top: 50%
+            width: 44px
+            height: 44px
+            transform: translateY(-50%)
+            border-radius: 3px
+            background-color: #CFCFCF
+            transition: box-shadow .3s
+            +md
+                width: 38px
+                height: 38px
+            +xs
+                width: 30px
+                height: 30px
+            .checkbox.not-valid &
+                box-shadow: inset 0 0 0 3px #db0100
+        &:after
+            content: ''
+            position: absolute
+            display: inline-block
+            left: 15px
+            top: 50%
+            width: 16px
+            height: 32px
+            border: solid $black
+            border-width: 0px 3px 3px 0
+            transform: translateY(-65%) rotate(45deg)
+            opacity: 0
+            transition: opacity .3s
+            +md
+                width: 12px
+                height: 24px
+                left: 14px
+            +xs
+                left: 10px
+                width: 10px
+                height: 20px
+    &__link
+        display: block
+        color: $white
+        text-decoration: none
+        +hover
+            text-decoration: underline
+
+
+.error
+    position: absolute
+    left: 0
+    top: 100%
+    color: $white
+    font-size: 18px
+    line-height: 1
+    text-shadow: 0px 3px 11px $black
+    +md
+        font-size: 14px
+        font-weight: 300

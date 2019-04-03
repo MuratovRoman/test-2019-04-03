@@ -1,0 +1,7 @@
+ProjectTitle: template
+
+PageList:
+- file: page.html
+  ready: 50
+- file: success-message.html
+  ready: 50

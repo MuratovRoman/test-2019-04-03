@@ -1,0 +1,110 @@
+[data-modal]
+    position: fixed
+    z-index: -1
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    opacity: 0
+    visibility: hidden
+    min-width: 320px
+    +vertical
+    +gpu
+    overflow: auto
+    transition: opacity 0.3s, visibility 0.3s, z-index 0.3s
+    background-color: rgba($black, 0.5)
+    &.is-open
+        opacity: 1
+        visibility: visible
+        z-index: 100
+
+[data-modal-container]
+    position: relative
+    z-index: 1
+    vertical-align: middle
+    display: inline-block
+    max-width: 1000px
+    margin: 0 auto
+
+.modal-error
+    padding: 79px 10px 87px
+    width: 100%
+    max-width: 663px
+    background-color: #71225d
+    color: $white
+    +sm
+        padding: 40px 15px
+    &__text
+        font-size: 24px
+        line-height: 3
+.modal-success
+    padding: 50px 0 25px
+    width: 100%
+    max-width: 791px
+    background-color: #71225d
+    color: $white
+    +sm
+        padding: 40px 15px
+    &__title
+        padding-bottom: 40px
+        // font-family: $myriad
+        font-size: 43px
+        line-height: 1.2
+        text-transform: uppercase
+        +sm
+            font-size: 28px
+            padding-bottom: 20px
+    &__logo
+        height: 160px
+        margin-bottom: 24px
+        display: flex
+        align-items: center
+        justify-content: center
+        font-size: 86px
+        background-color: #1b1b1b
+        +sm
+            font-size: 50px
+    &__action
+        margin-bottom: 36px
+        font-size: 24px
+        line-height: 1.2
+        font-weight: 700
+        +sm
+            margin-bottom: 20px
+            font-size: 18px
+    &__hint
+        padding: 0 104px 27px
+        // font-family: $myriad
+        font-size: 18px
+        line-height: 1.2
+        color: #ffffff
+        +sm
+            padding: 0 0 20px
+            font-size: 16px
+    &__wish
+        margin-bottom: 34px
+        font-size: 24px
+        font-weight: 700
+        line-height: 1.2
+        text-transform: uppercase
+        +sm
+            margin-bottom: 20px
+            font-size: 20px
+    &__btn
+        display: inline-block
+        padding: 32px 75px 30px
+        border: 2px solid #924e9d
+        background-image: linear-gradient(45deg, #4f2169 0%, #c31e41 100%)
+        text-decoration: none
+        +sm
+            padding: 32px 0 30px
+            width: 100%
+        &-text
+            color: $white
+            font-family: $circe
+            font-size: 24px
+            font-weight: 700
+            line-height: 1
+            text-transform: uppercase
+            +sm
+                font-size: 20px

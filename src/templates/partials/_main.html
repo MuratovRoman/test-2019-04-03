@@ -1,0 +1,44 @@
+<div class="main" style="background-image: url(./img/main-bg.jpg)">
+    <div class="main__inner inner">
+        <div class="main__content">
+            <h1 class="main__title">ПОЛУЧИТЕ БОНУС! <span data-text="500$">500$</span> НА ДЕПОЗИТ</h1>
+            <div class="main__bg" style="background-image: url(./img/form-bg.jpg)"></div>
+            <div class="main__coins">
+                <img src="./img/coins.png" alt="coins">
+            </div>
+            <div class="main__statue main__statue_anubis">
+                <img src="./img/anubis.png" alt="anubis">
+            </div>
+            <div class="main__statue main__statue_gor">
+                <img src="./img/gor.png" alt="gor">
+            </div>
+            <div class="main__form">
+                <form action="form.php" class="form js-form" method="POST">
+                    <div class="form__top">
+                        <div class="form-control js-email-parent">
+                            <input type="text" class="form-input js-email" placeholder="Почта">
+                            <div class="error js-error"></div>
+                        </div>
+                        <div class="form-control js-password-parent">
+                            <input type="password" class="form-input js-password" placeholder="Пароль">
+                            <div class="error js-error"></div>
+                        </div>
+                    </div>
+                    <div class="form__bottom">
+                        <div class="form-control">
+                            {{ mixins.checkbox({
+                                text: 'Мне 18 лет и я соглашаюсь с',
+                                link: 'Правилами конфиденциальности'
+                            })}}
+                        </div>
+                        <div class="form__submit">
+                            <button class="form__btn" type="submit">
+                                <span>Играть</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

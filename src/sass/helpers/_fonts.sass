@@ -1,0 +1,29 @@
+//FONTS
+=fontpath($name, $name1, $file)
+	src: local($name), local($name1), url("../fonts/" + $file + ".woff2") format("woff2"), url("../fonts/" + $file + ".woff") format("woff")
+=fontdefault($style, $weight, $name)
+	font-family: $name
+	font-style: $style
+	font-weight: $weight
+
+// Circe
+@font-face
+	+fontdefault(normal, 200, 'Circe')
+	+fontpath('Circe Extra-Light', 'Circe-ExtraLight', Circe-ExtraLight)
+@font-face
+	+fontdefault(normal, 300, 'Circe')
+	+fontpath('Circe Light', 'Circe-Light', Circe-Light)
+@font-face
+	+fontdefault(normal, 400, 'Circe')
+	+fontpath('Circe', 'Circe-Regular', Circe-Regular)
+@font-face
+	+fontdefault(normal, 700, 'Circe')
+	+fontpath('Circe Bold', 'Circe-Bold', Circe-Bold)
+@font-face
+	+fontdefault(normal, 800, 'Circe')
+	+fontpath('Circe Extra-Bold', 'Circe-Extrabold', Circe-Extrabold)
+
+// Acrom
+@font-face
+	+fontdefault(normal, 800, 'Acrom')
+	+fontpath('Acrom Extra-Bold', 'Acrom-Extrabold', Acrom-ExtraBold)

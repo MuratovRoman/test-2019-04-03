@@ -1,0 +1,123 @@
+.main
+    padding-top: 50px
+    flex: 1 0 auto
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    overflow: hidden
+    +r(1600)
+        padding-top: 25px
+    +sm
+        padding-top: 190px
+    +xs
+        padding-top: 110px
+    &__inner
+        height: 100%
+        display: flex
+        justify-content: center
+    &__content
+        position: relative
+        max-width: 665px
+        margin: 0 auto
+        padding: 30px 28px 60px
+        display: flex
+        flex-direction: column
+        z-index: 10
+        +r(1600)
+            padding: 20px 28px 40px
+    &__title
+        flex: 0 0 auto
+        margin-bottom: 28px
+        font-size: 53px
+        font-weight: 700
+        line-height: 1
+        text-align: center
+        color: $white
+        text-shadow: 0 3px 11px $black
+        +r(1600)
+            font-size: 45px
+            margin-bottom: 20px
+        +xs
+            font-size: 25px
+        span
+            display: inline-block
+            background: -webkit-linear-gradient(#DA7D0F, #C05302)
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+            text-shadow: none
+            position: relative
+            &:after
+                position: absolute
+                content: attr(data-text)
+                left: 0
+                top: 0
+                text-shadow: 0 3px 11px $black
+                z-index: -1
+
+    &__form
+        flex: 1 0 auto
+    &__bg
+        position: absolute
+        left: 0
+        top: 0
+        right: 0
+        bottom: 110px
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
+        opacity: 0.84
+        z-index: -5
+        border-radius: 5px
+        border: 3px solid $yellow
+        +r(1600)
+            bottom: 70px
+        &:before
+            content: ''
+            position: absolute
+            left: 0
+            top: 0
+            bottom: 0
+            right: 0
+            background-color: rgba($black,.5)
+            z-index: 1
+    &__coins
+        position: absolute
+        // left: 50%
+        // top: 50%
+        // transform: translate(-50% -50%)
+        z-index: -7
+        top: -50px
+        left: -260px
+        right: -225px
+        +sm
+            top: -140px
+            left: -200px
+            right: -178px
+        img
+            display: block
+            max-width: 100%
+    &__statue
+        position: absolute
+        top: 60px
+        width: 295px
+        z-index: -10
+        +sm
+            top: -180px
+        +xs
+            width: 200px
+            top: -110px
+        img
+            display: block
+            max-width: 100%
+        &_gor
+            left: -185px
+            +sm
+                left: -65px
+            +xs
+                left: -40px
+        &_anubis
+            right: -190px
+            +sm
+                right: -85px
+            +xs
+                right: -40px
