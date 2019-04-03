@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Index page</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/app.css">
+  </head>
+
+  <body>
+    <!-- BEGIN content -->
+    <div class="out">
+      <div class="page">
+        <div class="main" style="background-image: url(./img/main-bg.jpg)">
+          <div class="main__inner inner">
+            <div class="main__content">
+              <h1 class="main__title">ПОЛУЧИТЕ БОНУС! <span data-text="500$">500$</span> НА ДЕПОЗИТ</h1>
+              <div class="main__bg" style="background-image: url(./img/form-bg.jpg)"></div>
+              <div class="main__coins">
+                <img src="./img/coins.png" alt="coins">
+              </div>
+              <div class="main__statue main__statue_anubis">
+                <img src="./img/anubis.png" alt="anubis">
+              </div>
+              <div class="main__statue main__statue_gor">
+                <img src="./img/gor.png" alt="gor">
+              </div>
+              <div class="main__form">
+                <form action="form.php" class="form js-form" method="POST">
+                  <div class="form__top">
+                    <div class="form-control js-email-parent">
+                      <input type="text" class="form-input js-email" placeholder="Почта">
+                      <div class="error js-error"></div>
+                    </div>
+                    <div class="form-control js-password-parent">
+                      <input type="password" class="form-input js-password" placeholder="Пароль">
+                      <div class="error js-error"></div>
+                    </div>
+                  </div>
+                  <div class="form__bottom">
+                    <div class="form-control">
+                      <!-- begin input -->
+                      <label class="checkbox js-checkbox">
+                        <input type="checkbox" name="checkbox">
+                        <span class="checkbox__text">Мне 18 лет и я соглашаюсь с<a href="#" class="checkbox__link">Правилами конфиденциальности</a></span>
+                      </label>
+                      <!-- end input -->
+                    </div>
+                    <div class="form__submit">
+                      <button class="form__btn" type="submit">
+                        <span>Играть</span>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <div class="footer__inner inner">
+            <div class="footer__content">
+              <div class="footer__logo">Our logo</div>
+              <div class="footer__partners partners">
+                <div class="partners__item">
+                  <img src="./img/a.png" alt="a">
+                </div>
+                <div class="partners__item">
+                  <img src="./img/netent.png" alt="netent">
+                </div>
+                <div class="partners__item">
+                  <img src="./img/amatic.png" alt="amatic">
+                </div>
+                <div class="partners__item">
+                  <img src="./img/isoftbet.png" alt="isoftbet">
+                </div>
+                <div class="partners__item">
+                  <img src="./img/quickspin.png" alt="quickspin">
+                </div>
+                <div class="partners__item">
+                  <img src="./img/aristokrat.png" alt="aristokrat">
+                </div>
+                <div class="partners__item">
+                  <img src="./img/gaminat.png" alt="gaminat">
+                </div>
+                <div class="partners__item">
+                  <img src="./img/green_tube.png" alt="green_tube">
+                </div>
+                <div class="partners__item">
+                  <img src="./img/igt.png" alt="igt">
+                </div>
+                <div class="partners__item">
+                  <img src="./img/wazdan.png" alt="wazdan">
+                </div>
+                <div class="partners__item">
+                  <img src="./img/microgaming.png" alt="microgaming">
+                </div>
+                <div class="partners__item">
+                  <img src="./img/simple_games.png" alt="simple_games">
+                </div>
+                <div class="partners__item">
+                  <img src="./img/visa.png" alt="visa">
+                </div>
+                <div class="partners__item">
+                  <img src="./img/maestro.png" alt="maestro">
+                </div>
+                <div class="partners__item">
+                  <img src="./img/master_card.png" alt="master_card">
+                </div>
+                <div class="partners__item">
+                  <img src="./img/webmoney.png" alt="webmoney">
+                </div>
+                <div class="partners__item">
+                  <img src="./img/yandex_money.png" alt="yandex_money">
+                </div>
+                <div class="partners__item">
+                  <img src="./img/q.png" alt="q">
+                </div>
+                <div class="partners__age-limit">
+                  <img src="./img/age.png" alt="age limit">
+                </div>
+              </div>
+              <div class="footer__logo lg-hide">Our logo</div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <!-- END content -->
+    <div class="modal js-error" data-modal="error">
+      <div class="modal-error" data-modal-container>
+        <div class="modal-error__inner">
+          <div class="modal-error__text js-error-block"> Пользователь с таким имейлом/телефоном уже существует </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal js-success" data-modal="success">
+      <div class="modal-success" data-modal-container>
+        <div class="modal-success__inner">
+          <div class="modal-success__title">Добро пожаловать!</div>
+          <div class="modal-success__logo">Our logo</div>
+          <div class="modal-success__action"> Для активации аккаунта выполните инструкцию в письме, которое мы отправили на Ваш E-mail. </div>
+          <div class="modal-success__hint"> После активации Вы сможете войти в свой личный кабинет, используя свой логин и пароль. </div>
+          <div class="modal-success__wish">ЖЕЛАЕМ УДАЧНОЙ ИГРЫ!</div>
+          <div class="modal-success__return">
+            <a href="/" class="modal-success__btn">
+              <span class="modal-success__btn-text">на главную!</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- BEGIN scripts -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- END scripts -->
+  </body>
+
+</html>
